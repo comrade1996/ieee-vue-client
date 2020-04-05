@@ -1,6 +1,6 @@
 <template>
 <div class="">
-  <full-calendar class="" :events="fcEvents" locale="en"></full-calendar>
+  <!-- <full-calendar class="" :events="fcEvents" locale="en"></full-calendar> -->
 </div>
 </template>
 
@@ -23,9 +23,9 @@ export default {
     /* eslint-disable no-mixed-spaces-and-tabs */
 	}
   },
-  components : {
-	'full-calendar': require('vue-fullcalendar')	
-  },
+  // components : {
+	// 'full-calendar': require('vue-fullcalendar')	
+  // },
   name: 'Events',
   props: {
     msg: String
