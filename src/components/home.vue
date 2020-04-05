@@ -18,9 +18,9 @@
   </li>
 </ul>
 </nav>
-<div class="">
-<span>IEEE ANUSB <span>FAMILY</span></span>
-<p>Lorem ipsum  commodi consequuntur suscipit! Ex consectetur est 
+<div class="text-center object-center mt-64">
+<span class="text-white text-center text-3xl font-bold">IEEE ANUSB <span class="text-blue-400 text-3xl font-bold">FAMILY</span></span>
+<p class="text-white ">Lorem ipsum  commodi consequuntur suscipit! Ex consectetur est 
   ipsa ad, illum, odit nam nihil neque fugiat dolorum quod perspiciatis eaque!</p>
 </div>
 </div>

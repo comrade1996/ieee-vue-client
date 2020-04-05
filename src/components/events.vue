@@ -1,6 +1,6 @@
 <template>
 <div class="">
-  <full-calendar :events="fcEvents" locale="en"></full-calendar>
+  <full-calendar class="" :events="fcEvents" locale="en"></full-calendar>
 </div>
 </template>
 

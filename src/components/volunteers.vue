@@ -1,25 +1,35 @@
 <template>
 <div class="">
 <carousel>
+
   <slide>
-    <div  class="bg-local object-cover" 
-    style="background-image: url('https://images.pexels.com/photos/3783725/pexels-photo-3783725.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')"></div>
- <p>omair gibreel</p>
-  </slide>
-  <slide>
-    <div  class="bg-local object-cover" 
-    style="background-image: url('https://images.pexels.com/photos/3783725/pexels-photo-3783725.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')"></div>
- <p>omair gibreel</p>
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-1">
+  <img class="w-full" src="https://fakeimg.pl/350x200/ff0000,128/000,255" alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+  </div>  
+</div>
   </slide>
 
   <slide>
-    <div  class="bg-local object-cover" 
-    style="background-image: url('https://images.pexels.com/photos/3783725/pexels-photo-3783725.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')"></div>
- <p>omair gibreel</p>
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-1">
+  <img class="w-full" src="https://fakeimg.pl/350x200/ff0000,128/000,255" alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    </div> 
+</div>
   </slide>
+
   <slide>
-    Slide 2 Content
+ <div class="max-w-sm rounded overflow-hidden shadow-lg mx-1">
+  <img class="w-full" src="https://fakeimg.pl/350x200/ff0000,128/000,255" alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    </div> 
+</div>
+
   </slide>
+
 </carousel>
 </div>
 </template>

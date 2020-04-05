@@ -1,8 +1,8 @@
 <template>
-<div class="bg-blue-500">
-<div class="container">
-  <span>asxasasasas</span>
-  <span>sddsdssddsdssd</span>
+<div class="bg-blue-500 h-48">
+<div class="container mx-20 my-20">
+  <span>IEEE</span>
+  <span>@IEEE - all right reserved</span>
   <span>sasasaassa</span>
 </div>
 </div>
@@ -19,18 +19,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
