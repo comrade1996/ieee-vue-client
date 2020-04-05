@@ -15,9 +15,9 @@
           </div>
         </div>
         <div class="flex flex-col md:-mx-4 md:flex-row" :class="isOpen ? 'block' : ['hidden' , 'md:block']">
-          <a class="text-sm hover:text-blue-400 md:mx-4" href="#">Home</a>
-          <a class="text-sm hover:text-blue-400 md:mx-4" href="#">Events</a>
-          <a class="text-sm hover:text-blue-400 md:mx-4" href="#">Volunteers</a>
+          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#">Home</a>
+          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#">Events</a>
+          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#">Volunteers</a>
         </div>
       </nav>
       <div class="flex items-center justify-center min-h-screen">
