@@ -18,6 +18,9 @@
           <div class="md:ml-20 mt-4">
             <textarea class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border" placeholder="Write your message" rows="6"></textarea>
           </div>
+          <div class="md:ml-20 mt-4">
+            <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md" type="submit">Send message</button>
+          </div>
         </form>
       </div>
     </div>
