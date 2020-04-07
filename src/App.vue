@@ -1,45 +1,35 @@
 <template>
-  <div id="app">
-    <Home msg="Welcome to Your Vue.js App"/>
-    <Aboutus msg="Welcome to Your Vue.js App"/>
-    <Events msg="Welcome to Your Vue.js App"/>
-    <Volunteers msg="Welcome to Your Vue.js App"/>
-    <Contactus msg="Welcome to Your Vue.js App"/>
-    <Footer msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="font-sans">
+    <Header/>
+    <Aboutus/>
+    <Events/>
+    <Volunteers/>
+    <Contact/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Home from './components/home.vue'
-import Aboutus from './components/aboutus.vue'
-import Events from './components/events.vue'
-import Volunteers from './components/volunteers.vue'
-import Contactus from './components/contactus.vue'
-import Footer from './components/footer.vue'
+import Header from './components/Header'
+import Aboutus from './components/Aboutus'
+import Events from './components/Events'
+import Volunteers from './components/Volunteers'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    Home,
+    Header,
     Aboutus,
     Events,
     Volunteers,
-    Contactus,
+    Contact,
     Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-.career{
-  background-color: red;
-  color: red;
-}
+  @import "assets/css/tailwind.css";
 </style>

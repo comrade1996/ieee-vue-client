@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import '@/assets/css/tailwind.css'
 import fullCalendar from 'vue-fullcalendar'
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
