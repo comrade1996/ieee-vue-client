@@ -9,7 +9,7 @@
            IEEE at Al-Neelain University , one of goals of student branch is create a scientific ,
             technical and engineering community that allows students to exit from the academic domain .
         </p>
-<a href="https://www.ieee.org"  class="text-blue-500 ">▸More info visit the IEEE Site </a> 
+        <a href="https://www.ieee.org"  class="text-blue-500 mt-2 block hover:underline">▸ More info visit the IEEE Site </a> 
       </div>
     </div>
      <div id="bg" class="h-64 mt-6 bg-center bg-cover rounded md:h-auto md:mt-0"></div>
