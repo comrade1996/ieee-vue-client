@@ -8,14 +8,14 @@
       :autoplayHoverPause="true"
     >
       <slide
-        class="flex px-4"
+        class="flex px-1"
         v-for="(volunteer, index) in volunteers"
         :key="index"
         style="width:fit-content"
       >
         <div class="max-w-sm my-4 overflow-hidden bg-white rounded-lg shadow-lg">
-          <carousel :paginationEnabled="false" :autoplayTimeout="3000" :perPage="1" :autoplay="true" :autoplayHoverPause="true">
-            <slide style="width:20rem;" v-for="(image, index) in volunteer.images" :key="index">
+          <carousel style="width:24rem" :paginationEnabled="false" :autoplayTimeout="8000" :perPage="1" :autoplay="true" :autoplayHoverPause="true">
+            <slide v-for="(image, index) in volunteer.images" :key="index">
             <img
               class="object-cover object-center w-full h-56"
               loading="lazy"
@@ -87,6 +87,18 @@ export default {
         },
       },
       volunteers: [
+        {
+          name: "Abdalaziz Mousa alrofai Mohammed",
+          images: [
+            { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
+            { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
+            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+            { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
+          ],
+          team: "Multimedia",
+          job: "Graphics Designer - video editor",
+        },
         {
           name: "Abdalaziz Mousa alrofai Mohammed",
           images: [
