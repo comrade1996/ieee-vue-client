@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-6 py-12 mx-auto">
+  <div class="container px-6 py-12 mx-auto" id="volunteers">
     <h1 class="text-xl font-bold text-center text-blue-500">Our Volunteers</h1>
 
     <carousel
@@ -339,6 +339,156 @@ export default {
           img: require("../assets/img/volunteers/Rayan_Abdelrahem_Ali_Mohammed.jpeg"),
           team: "Public relations",
           job: "Share and study ideas",
+        },
+        {
+          name: "Nasraldein abdallah mohammed",
+          img: require("../assets/img/volunteers/Nasraldein_abdallah_mohammed.jpg"),
+          team: "Multimedia",
+          job: "Designer",
+        },
+        {
+          name: "Ibrahim Amgd Alguzoly Abdalla",
+          img: require("../assets/img/volunteers/Ibrahim_Amgd_Alguzoly_Abdalla.jpg"),
+          team: "Logistic",
+          job: "Member",
+        },
+        {
+          name: "Modather Ahmed Mohamed Noor",
+          img: require("../assets/img/volunteers/Modather_Ahmed_Mohamed_Noor.jpg"),
+          team: "Marketing",
+          job: "Search & correcting posts",
+        },
+        {
+          name: "Mohamed Adam Musa Idris",
+          img: require("../assets/img/volunteers/Mohamed_Adam_Musa_Idris.jpg"),
+          team: "Logistic",
+          job: "Technical support",
+        },
+        {
+          name: "Safaa hassan musa dowalbeet",
+          img: require("../assets/img/volunteers/no_image.jpeg"),
+          team: "Public relations",
+          job: "Member",
+        },
+        {
+          name: "Albraa Ibrahim Mohamed Ibrahim",
+          img: require("../assets/img/volunteers/Albraa_Ibrahim_Mohamed_Ibrahim.jpg"),
+          team: "Public relations",
+          job: "Member",
+        },
+        {
+          name: "Mushtaha Mudaser Abd-elmajed Babikr",
+          img: require("../assets/img/volunteers/Mushtaha_Mudaser_Abd-elmajed_Babikr.jpg"),
+          team: "Logistic",
+          job: "Member",
+        },
+        {
+          name: "Mohammed barakat Hamed alnieel",
+          img: require("../assets/img/volunteers/Mohammed_barakat_Hamed_alnieel.jpg"),
+          team: "Multimedia",
+          job: "Member",
+        },
+        {
+          name: "Awab medhat mohammed el-hassan",
+          img: require("../assets/img/volunteers/Awab_medhat_mohammed_el-hassan.jpg"),
+          team: "Logistics",
+          job: "Member",
+        },
+        {
+          name: "Tibyan Nizar Alsir Abdulsamad",
+          img: require("../assets/img/volunteers/Tibyan_Nizar_Alsir_Abdulsamad.jpg"),
+          team: "Public relations",
+          job: "Member",
+        },
+        {
+          name: "Lujain al-attaya ibrahim adam",
+          img: require("../assets/img/volunteers/Lujain_al-attaya_ibrahim_adam.jpg"),
+          team: "Public relations",
+          job: "Member",
+        },
+        {
+          name: "Sahar jaafar zain el-abidine",
+          img: require("../assets/img/volunteers/Sahar_jaafar_zain_el-abidine.jpg"),
+          team: "Marketing",
+          job: "Member",
+        },
+        {
+          name: "Fatima mohktar muhamed almin",
+          img: require("../assets/img/volunteers/no_image.jpeg"),
+          team: "Logistic",
+          job: "Member",
+        },
+        {
+          name: "Ayaa Elnazer mohmmad abd alhade",
+          img: require("../assets/img/volunteers/Ayaa_Elnazer_mohmmad_abd_alhade.jpg"),
+          team: "Logistic",
+          job: "Member",
+        },
+        {
+          name: "Fawzeia Nasr Hussein Abdelrahman",
+          img: require("../assets/img/volunteers/Fawzeia_Nasr_Hussein_Abdelrahman.jpg"),
+          team: "Multimedia",
+          job: "Member",
+        },
+        {
+          name: "Mustafa omer Mustafa alawad",
+          img: require("../assets/img/volunteers/Mustafa_omer_Mustafa_alawad.jpg"),
+          team: "public relations",
+          job: "Member",
+        },
+        {
+          name: "mujtaba abdelwhab Mohamed",
+          img: require("../assets/img/volunteers/mujtaba_abdelwhab_Mohamed.jpg"),
+          team: "Strategic",
+          job: "Member",
+        },
+        {
+          name: "Fatima mohktar mohumed almin",
+          img: require("../assets/img/volunteers/Fatima_mohktar_mohumed_almin.jpg"),
+          team: "Logistic",
+          job: "Member",
+        },
+        {
+          name: "Alhassan abdalrhman alhassan alsheik",
+          img: require("../assets/img/volunteers/Alhassan_abdalrhman_alhassan_alsheik.jpg"),
+          team: "Public relations",
+          job: "Member",
+        },
+        {
+          name: "Mohialdeen Alderdery Mohammed Ali Hamd",
+          img: require("../assets/img/volunteers/Mohialdeen_Alderdery_Mohammed_Ali_Hamd.jpg"),
+          team: "Public relations",
+          job: "Member",
+        },
+        {
+          name: "Hashim Ahmad Musa Ibrahim",
+          img: require("../assets/img/volunteers/Hashim_Ahmad_Musa_Ibrahim.jpg"),
+          team: "Public relations",
+          job: "Member",
+        },
+        {
+          name: "Mrwa El-Bagir Ahmed Abd Alrahman Abd Alfadil",
+          img: require("../assets/img/volunteers/Mrwa_El-Bagir_Ahmed_Abd_Alrahman_Abd_Alfadil.jpeg"),
+          team: "Marketing",
+          job: "Member",
+        },
+        {
+          name: "Amal Hassab Alrasol Mohamed Ahmed",
+          img: require("../assets/img/volunteers/Amal_Hassab _Alrasol_Mohamed_Ahmed.jpeg"),
+          team: "Financial",
+          job: "Member",
+        },
+        {
+          name: "Roaa kheder rahma Ahmed",
+          img: require("../assets/img/volunteers/no_image.jpeg"),
+          team: "",
+          job: "Member",
+        },
+        {
+          name: "Raheeg Ogail Ali",
+          img: require("../assets/img/volunteers/Raheeg_Ogail_Ali.jpeg"),
+          team: "Financial",
+          job: "Member",
         },
       ],
     };
