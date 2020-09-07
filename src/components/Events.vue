@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-6 py-12 mx-auto">
+  <div class="container px-6 py-12 mx-auto" id="events">
     <h1 class="text-xl font-bold text-center text-blue-500">Our Events</h1>
 
     <carousel

@@ -1,5 +1,5 @@
 <template>
-<div class="bg-gray-200">
+<div class="bg-gray-200" id="contact-us">
   <div class="container mx-auto px-6 py-12">
     <h1 class="text-blue-500 font-bold text-xl text-center">Contact</h1>
     <p class="font-bold text-gray-700 text-center mt-2">Get in touch with us</p>
