@@ -1,23 +1,24 @@
 <template>
   <div id="app" class="font-sans">
-    <Header />
-    <Aboutus />
+    <Header /> 
+    <AllVolunteers />
+    <!-- <Aboutus />
     <Events />
     <Speakers />
-    <Volunteers />
-    <Contact />
+   
+    <Contact /> -->
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
-import Aboutus from "./components/Aboutus";
-import Events from "./components/Events";
-import Volunteers from "./components/Volunteers";
-import Contact from "./components/Contact";
+// import Aboutus from "./components/Aboutus";
+// import Events from "./components/Events";
+import AllVolunteers from "./components/AllVolunteers";
+// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Speakers from "./components/Speakers";
+// import Speakers from "./components/Speakers";
 import Vue from "vue";
 import VueCarousel from "vue-carousel";
 import VueAgile from 'vue-agile';
@@ -32,11 +33,12 @@ export default {
   name: "App",
   components: {
     Header,
-    Aboutus,
-    Events,
-    Speakers,
-    Volunteers,
-    Contact,
+    AllVolunteers,
+    // Aboutus,
+    // Events,
+    // Speakers,
+    // Volunteers,
+    // Contact,
     Footer,
   },
 };

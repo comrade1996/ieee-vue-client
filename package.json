@@ -16,7 +16,8 @@
     "vue-awesome-swiper": "^4.1.1",
     "vue-carousel": "^0.18.0",
     "vue-fullcalendar": "^1.0.9",
-    "vue-generate-component": "^3.0.0"
+    "vue-generate-component": "^3.0.0",
+    "vue-router": "^3.4.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",

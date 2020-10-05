@@ -6,6 +6,7 @@
       :perPageCustom="[[768, 3], [1024, 3], [400,1] ,[360,1], [280,1], [520, 1]]"
       :autoplay="true"
       :autoplayHoverPause="true"
+      :paginationEnabled="false"
     >
       <slide
         class="flex px-1"
@@ -16,6 +17,7 @@
         <div class="max-w-sm my-4 overflow-hidden bg-white rounded-lg shadow-lg">
           <carousel style="width:24rem" :paginationEnabled="false" :autoplayTimeout="8000" :perPage="1" :autoplay="true" :autoplayHoverPause="true">
             <slide v-for="(image, index) in volunteer.images" :key="index">
+              <span v-if="isDraged" class="absolute bg-gray-900 capitalize flex h-full justify-center opacity-75 pt-24 text-blue-500 text-xl w-full" @dragstart="isDraged = !isDraged">drag me left</span>
             <img
               class="object-cover object-center w-full h-56"
               loading="lazy"
@@ -80,6 +82,7 @@
 export default {
   data() {
     return {
+      isDraged:true,
       swiperOption: {
         navigation: {
           nextEl: ".swiper-button-next",
@@ -99,66 +102,66 @@ export default {
           team: "Multimedia",
           job: "Graphics Designer - video editor",
         },
-        {
-          name: "Abdalaziz Mousa alrofai Mohammed",
-          images: [
-            { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
-            { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
-          ],
-          team: "Multimedia",
-          job: "Graphics Designer - video editor",
-        },
-        {
-          name: "Abdalaziz Mousa alrofai Mohammed",
-          images: [
-            { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
-            { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
-          ],
-          team: "Multimedia",
-          job: "Graphics Designer - video editor",
-        },
-        {
-          name: "Abdalaziz Mousa alrofai Mohammed",
-          images: [
-            { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
-            { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
-          ],
-          team: "Multimedia",
-          job: "Graphics Designer - video editor",
-        },
-        {
-          name: "Abdalaziz Mousa alrofai Mohammed",
-          images: [
-            { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
-            { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
-          ],
-          team: "Multimedia",
-          job: "Graphics Designer - video editor",
-        },
-        {
-          name: "Abdalaziz Mousa alrofai Mohammed",
-          images: [
-            { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
-            { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
-            { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
-          ],
-          team: "Multimedia",
-          job: "Graphics Designer - video editor",
-        },
+        // {
+        //   name: "Abdalaziz Mousa alrofai Mohammed",
+        //   images: [
+        //     { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
+        //     { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
+        //   ],
+        //   team: "Multimedia",
+        //   job: "Graphics Designer - video editor",
+        // },
+        // {
+        //   name: "Abdalaziz Mousa alrofai Mohammed",
+        //   images: [
+        //     { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
+        //     { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
+        //   ],
+        //   team: "Multimedia",
+        //   job: "Graphics Designer - video editor",
+        // },
+        // {
+        //   name: "Abdalaziz Mousa alrofai Mohammed",
+        //   images: [
+        //     { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
+        //     { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
+        //   ],
+        //   team: "Multimedia",
+        //   job: "Graphics Designer - video editor",
+        // },
+        // {
+        //   name: "Abdalaziz Mousa alrofai Mohammed",
+        //   images: [
+        //     { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
+        //     { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
+        //   ],
+        //   team: "Multimedia",
+        //   job: "Graphics Designer - video editor",
+        // },
+        // {
+        //   name: "Abdalaziz Mousa alrofai Mohammed",
+        //   images: [
+        //     { url: require("../assets/img/volunteers/Abdalaziz_Mousa_alrofai_Mohammed.jpg") },
+        //     { url: "https://images.unsplash.com/photo-1599229752248-419f05f01faa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599058919120-9ed1015f0fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" },
+        //     { url: "https://images.unsplash.com/photo-1599218422795-545e7e2f5eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" }
+        //   ],
+        //   team: "Multimedia",
+        //   job: "Graphics Designer - video editor",
+        // },
       ],
     };
   },

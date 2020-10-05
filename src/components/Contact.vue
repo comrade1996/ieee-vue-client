@@ -5,18 +5,18 @@
     <p class="font-bold text-gray-700 text-center mt-2">Get in touch with us</p>
     <div class="md:flex justify-center items-center mt-10">
       <div class="w-full md:w-1/2">
-        <img src="../assets/img/undraw_contact_us_15o2.svg" alt="img">
+        <img :src="img" alt="img">
       </div>
       <div class="w-full mt-6 md:w-1/2 md:mt-0">
         <form action="#">
           <div class="md:ml-20">
-            <input class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border" type="text" placeholder="Your name">
+            <input class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border focus:outline-none focus:border-blue-500 outline-none" type="text" placeholder="Your name">
           </div>
           <div class="md:ml-20 mt-4">
-            <input class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border" type="text" placeholder="Your name">
+            <input class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border focus:outline-none focus:border-blue-500 outline-none" type="text" placeholder="Your name">
           </div>
           <div class="md:ml-20 mt-4">
-            <textarea class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border" placeholder="Write your message" rows="6"></textarea>
+            <textarea class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border focus:outline-none focus:border-blue-500 outline-none" placeholder="Write your message" rows="6"></textarea>
           </div>
           <div class="md:ml-20 mt-4">
             <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md" type="submit">Send message</button>
@@ -27,3 +27,12 @@
   </div>
 </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      img:require('../assets/img/undraw_contact_us_15o2.svg')
+    }
+  },
+}
+</script>
