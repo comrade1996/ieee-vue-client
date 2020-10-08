@@ -8,7 +8,7 @@
         <div class="flex items-center justify-between">
           <div>
             <a class="text-2xl font-bold hover:text-blue-400 md:text-3xl" href="#">
-              <img class="h-16 md:h-32 object-center object-cover w-16 md:w-32" src="../assets/img/IEEE Logo2-01.png" alt="">
+              <img class="h-16 md:h-24 object-center object-cover w-16 md:w-24" src="../assets/img/logo.png" alt="">
             </a>
           </div>
           <div class="md:hidden">
@@ -20,11 +20,13 @@
           </div>
         </div>
         <div class="flex flex-col md:-mx-4 md:flex-row" :class="isOpen ? 'block' : ['hidden' , 'md:block']">
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#home">Home</a>
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#about-us">About Us </a>
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#events">Events</a>
+          <router-link to="/" class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#home">Home</router-link>
+          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#about-us">About Us</a>
+          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#teams">Teams</a>
+          <router-link to="/events" class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4">Events</router-link>
           <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#speakers">Speakers</a>
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#volunteers">Volunteers</a>
+          <router-link class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" to="volunteers">Volunteers</router-link>
+          <!-- <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#volunteers">Volunteers</a> -->
           <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#contact-us">Contact Us</a>
         </div>
       </nav>

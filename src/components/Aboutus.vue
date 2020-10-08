@@ -1,5 +1,5 @@
 <template>
-  <div class="container grid grid-cols-1 px-6 py-10 mx-auto md:grid-cols-2" id="about-us">
+  <div class="container grid grid-cols-1 px-6 py-10 mx-auto md:grid-cols-2 transition duration-500 ease-in-out" id="about-us">
     <div class="flex items-center justify-center md:h-96">
       <div class="md:mr-12">
         <h2 class="font-bold text-blue-500">About Us</h2>

@@ -13,7 +13,7 @@
             <input class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border focus:outline-none focus:border-blue-500 outline-none" type="text" placeholder="Your name">
           </div>
           <div class="md:ml-20 mt-4">
-            <input class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border focus:outline-none focus:border-blue-500 outline-none" type="text" placeholder="Your name">
+            <input class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border focus:outline-none focus:border-blue-500 outline-none" type="email" placeholder="Your E-Mail">
           </div>
           <div class="md:ml-20 mt-4">
             <textarea class="bg-white text-gray-700 px-6 py-3 placeholder-gray-600 w-full rounded-md border-gray-300 border focus:outline-none focus:border-blue-500 outline-none" placeholder="Write your message" rows="6"></textarea>
