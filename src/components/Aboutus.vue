@@ -5,9 +5,10 @@
         <h2 class="font-bold text-blue-500">About Us</h2>
         <h1 class="mt-3 text-2xl text-gray-800 md:text-3xl">IEEE Al-Neelain Student Branch</h1>
         <p class="mt-2 text-sm text-gray-600 md:text-base">
-          IEEE Al-Neelain Student Branch was founded in January 2018 to be official branch of
-           IEEE at Al-Neelain University , one of goals of student branch is create a scientific ,
-            technical and engineering community that allows students to exit from the academic domain .
+          IEEE Al-Neelain Student Branch was founded in January,
+           2018 to be the official branch of IEEE at Al-Neelain University,
+            one of goals of  the student branch - ANUSB - is to create a scientific,
+             technical and engineering community that allows students to exit from the academic domain.
         </p>
         <a href="https://www.ieee.org"  class="text-blue-500 mt-2 block hover:underline">▸ More info visit the IEEE Site </a> 
       </div>

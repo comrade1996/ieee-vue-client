@@ -1,12 +1,13 @@
 <template>
   <div class="container px-6 py-12 mx-auto" id="events">
-    <h1 class="text-xl font-bold text-center text-blue-500">Events</h1>
+    <h1 class="text-xl font-bold text-center text-blue-500">Latest Events</h1>
 
 <carousel
       :perPageCustom="[[768, 3], [1024, 3], [400,1] ,[360,1], [280,1], [520, 1]]"
       :autoplay="true"
       :autoplayHoverPause="true"
       :paginationEnabled="false"
+      :navigationEnabled="true"
     >
       <slide
         class="flex px-1"

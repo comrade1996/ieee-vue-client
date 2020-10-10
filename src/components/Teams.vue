@@ -7,6 +7,7 @@
       :autoplay="true"
       :autoplayHoverPause="true"
       :paginationEnabled="false"
+      :navigationEnabled="true"
     >
       <slide
         class="flex px-1"
