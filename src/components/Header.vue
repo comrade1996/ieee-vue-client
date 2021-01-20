@@ -1,10 +1,15 @@
 <template>
-  <header class="text-white bg-fixed bg-top bg-cover">
-    <div class="container px-6 mx-auto">
-      <nav class="flex flex-col py-2 md:flex-row md:items-center md:justify-between">
+  <header class="text-white bg-fixed bg-top bg-cover" id="home">
+    <div class="mx-auto">
+      <nav :class="{ 'scrolled': !view.atTopOfPage }" 
+        class="animated fixed flex flex-wrap items-center justify-between md:pt-5 px-16 top-0 w-full z-10">
+      <!-- <nav :class="{ 'scrolled': !view.atTopOfPage }" 
+           class="flex flex-col md:flex-row md:items-center md:justify-between px-16 py-2"> -->
         <div class="flex items-center justify-between">
           <div>
-            <a class="text-2xl font-bold hover:text-blue-400 md:text-3xl" href="#">IEEE</a>
+            <a class="text-2xl font-bold hover:text-blue-400 md:text-3xl" href="#">
+              <img class="h-16 md:h-24 object-center object-cover w-16 md:w-24" src="../assets/img/logo.png" alt="">
+            </a>
           </div>
           <div class="md:hidden">
             <button @click="isOpen = !isOpen" type="button" class="block focus:outline-none">
@@ -15,11 +20,13 @@
           </div>
         </div>
         <div class="flex flex-col md:-mx-4 md:flex-row" :class="isOpen ? 'block' : ['hidden' , 'md:block']">
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#home">Home</a>
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#events">Events</a>
+          <router-link to="/" class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#home">Home</router-link>
+          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#about-us">About Us</a>
+          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#teams">Teams</a>
+          <router-link to="/events" class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4">Events</router-link>
           <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#speakers">Speakers</a>
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#about-us">About Us </a>
-          <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#volunteers">Volunteers</a>
+          <router-link class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" to="volunteers">Volunteers</router-link>
+          <!-- <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#volunteers">Volunteers</a> -->
           <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#contact-us">Contact Us</a>
         </div>
       </nav>
@@ -48,10 +55,28 @@
 <script>
 export default {
   data() {
-    return {
-      isOpen: false
-    }
-  }
+        return {
+            isOpen:false,
+            view: {
+                atTopOfPage: true
+            }
+        }
+    },
+    beforeMount () {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+        methods: {
+            handleScroll(){
+                // when the user scrolls, check the pageYOffset
+                if(window.pageYOffset>0){
+                    // user is scrolled
+                    if(this.view.atTopOfPage) this.view.atTopOfPage = false
+                }else{
+                    // user is at top of page
+                    if(!this.view.atTopOfPage) this.view.atTopOfPage = true
+                }
+            },
+        }
 }
 </script>
 
@@ -59,4 +84,16 @@ export default {
  header {
    background-image: url("../assets/img/header.png");
  }
+ /* nav {
+    z-index: 10
+} */
+
+nav.scrolled {
+    @apply shadow-2xl;
+    @apply border-b-2 ;
+    @apply border-blue-500;
+    @apply bg-blue-900;
+    @apply opacity-75;
+    @apply pt-0;
+}
 </style>
