@@ -3,7 +3,7 @@
     <h1 class="text-xl font-bold text-center text-blue-500">Volunteers Offiec</h1>
 
     <carousel
-      :perPageCustom="[[768, 3], [1024, 3], [400,1] ,[360,1], [280,1], [520, 1]]"
+      :perPageCustom="[[768, 3], [1024, 3], [480,2] ,[360,1], [280,1], [520, 2]]"
       :autoplay="true"
       :autoplayHoverPause="true"
       :paginationEnabled="false"
